@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""zoom array"""
-from typing import Tuple, List, Any, Union
+"""Use mypy to validate the piece of code and apply any changes."""
+from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
-    """Zoom array"""
+    """Returns a list of integers multiplied by certain factor."""
     zoomed_in: List = [
         item for item in lst
-        for i in range(int(factor))
+        for i in range(factor)
     ]
     return zoomed_in
 
 
-array = (12, 72, 91)
+array: Tuple = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 

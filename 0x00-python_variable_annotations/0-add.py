@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Add two float numbers"""
+""" type-annotated function add that takes a float a and a float b"""
 
 
 def add(a: float, b: float) -> float:
-    """Add two float"""
+    """ Adding two float together"""
     return a + b

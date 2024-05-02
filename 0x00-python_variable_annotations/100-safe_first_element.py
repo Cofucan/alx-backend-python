@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""duck typed annotations"""
-from typing import Sequence, Union, Any
+"""Augment the following code with the correct duck-typed annotations"""
+from typing import Any, Union, Sequence
 
 
 def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    """Retrieve first el of sequence"""
+    """types of the elements of the input are not know"""
     if lst:
         return lst[0]
     else:

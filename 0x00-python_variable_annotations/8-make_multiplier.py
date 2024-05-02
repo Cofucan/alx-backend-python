@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Return multiplier function"""
+"""type-annotated function make_multiplier that takes a float multiplier"""
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """Return multiplier function"""
-    def muliply(n: float) -> float:
-        """Return multiply"""
-        return multiplier * n
-    return muliply
+    """returns a function that multiplies a float by multiplier"""
+    def multiplier_func(number: float) -> float:
+        return multiplier * number
+    return multiplier_func

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Sum up floats"""
-from functools import reduce
+"""type-annotated function sum_list which takes a list input_list"""
 from typing import List
 
 
 def sum_list(input_list: List[float]) -> float:
-    """sum of floats"""
-    return float(reduce(lambda x, y: x + y, input_list))
+    """Returns:the sum of the float in the list"""
+    return float(sum(input_list))
